@@ -18,11 +18,11 @@ type Config struct {
 
 func NewMySQLDatabase() (*gorm.DB, error) {
 	config := Config{
-		DB_Username: "root",
-		DB_Password: "erikrios",
+		DB_Username: "b3e103f75ab23c",
+		DB_Password: "4f3b2a25",
 		DB_Port:     "3306",
-		DB_Host:     "localhost",
-		DB_Name:     "library",
+		DB_Host:     "us-cdbr-east-05.cleardb.net",
+		DB_Name:     "heroku_41e2f92743a9807",
 	}
 
 	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local",
