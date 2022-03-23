@@ -15,7 +15,7 @@ import (
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
-		log.Fatal("$PORT must be set")
+		log.Fatalln("$PORT must be set")
 	}
 
 	db, err := config.NewMySQLDatabase()
